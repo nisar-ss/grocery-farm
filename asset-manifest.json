@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/grocery-farm/static/css/main.e0a592de.css",
+    "main.js": "/grocery-farm/static/js/main.f084d468.js",
+    "static/js/453.5338c025.chunk.js": "/grocery-farm/static/js/453.5338c025.chunk.js",
+    "static/media/img1.png": "/grocery-farm/static/media/img1.efb33cff18514c26eff4.png",
+    "static/media/img5.png": "/grocery-farm/static/media/img5.fe716bbe87a5e4678d88.png",
+    "index.html": "/grocery-farm/index.html",
+    "main.e0a592de.css.map": "/grocery-farm/static/css/main.e0a592de.css.map",
+    "main.f084d468.js.map": "/grocery-farm/static/js/main.f084d468.js.map",
+    "453.5338c025.chunk.js.map": "/grocery-farm/static/js/453.5338c025.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0a592de.css",
+    "static/js/main.f084d468.js"
+  ]
+}
