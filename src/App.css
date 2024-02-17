@@ -1,38 +1,477 @@
+body {
+  background-color: rgb(228, 228, 228);
+}
+
 .App {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header .container {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 1px;
+  padding: 0px 6%;
+}
+
+.navLinks {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+}
+
+.appName a {
+  color: yellowgreen;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.navLinks a.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: yellowgreen;
+}
+
+picture .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+picture img {
+  display: flex;
+
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  picture img {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+picture .overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  picture .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+  }
+}
+
+.overlaytext {
+  display: flex;
+  font-size: 100px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlaytext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .overlaytext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .overlaytext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+.overlay-para {
+  margin-top: 0px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width:600px) {
+  .overlay-para {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .overlay-para {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  .overlay-para {
+    font-size: 10px;
+  }
+}
+
+.topbtn {
+  background: none;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width:400px) {
+  .topbtn {
+    background: none;
+    color: white;
+    margin-top: 0em;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-inline: 10px;
+    padding-block: 2px;
+  }
+}
+
+.cards .container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cards {
+  margin-bottom: 40px;
+}
+
+.cards .container div img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cards .container .card-body {
+  text-align: left;
+}
+
+.cards .container a {
+  background: yellowgreen;
+  border-radius: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainimg2 {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .mainimg2 {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 300px) {
+  .mainimg2 {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vh;
+    object-fit: cover;
+    position: relative;
   }
+}
+
+.container2 {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+  .overlay2 {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  .overlay2 {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+}
+
+.overlaytext2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:600px) {
+  .overlaytext2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  .overlaytext2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.overlay-para2 {
+  font-size: 22px;
+}
+
+@media only screen and (max-width:400px) {
+  .overlay-para2 {
+    font-size: 16px;
+  }
+}
+
+.cards2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cards2 .container .card {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 2px;
+  border: none;
+  text-align: left;
+}
+
+.cards2 img {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 8px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px 0;
+}
+
+.container-footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .column h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column h4 {
+  text-align: left;
+}
+
+.column p {
+  text-align: left;
+  margin-right: 10%;
+  font-size: 16px;
+  font-weight: 10;
+}
+
+.column a {
+  display: flex;
+  margin-bottom: 10px;
+  color: yellowgreen;
+  align-items: left;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.email-input {
+  display: flex;
+}
+
+.email-input input {
+  font-size: 14px;
+  color: white;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  background: none;
+  width: 100%;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+.email-input button {
+  padding: 2% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: yellowgreen;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+
+.footer-bottom {
+  display: flex;
+  align-items: first center;
+  justify-content: space-between;
+  margin: 0px 10%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: x-large;
+}
+
+.footer {
+  background-image: url('./images/img5.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.footer .socials {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
+}
+
+.footer-bottom .icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 0%;
 }
